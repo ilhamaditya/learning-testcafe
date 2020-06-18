@@ -1,0 +1,32 @@
+{
+  "name": "testcafe-run-multi-browser",
+  "version": "1.0.0",
+  "description": "TestCafe multiple browser and parallel",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcafe chrome ./tests -s takeOnFails=true",
+    "test:chrome": "testcafe chrome ./tests",
+    "test:chrome:headless": "testcafe chrome:headless ./tests",
+    "test:safari": "testcafe safari ./tests",
+    "test:chrome:mobile": "testcafe chrome:emulation:device=iphone X ./tests"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ilhamaditya/testcafe.git"
+  },
+  "keywords": [
+    "Testcafe",
+    "Testing",
+    "Automation"
+  ],
+  "author": "Mux",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilhamaditya/testcafe/issues"
+  },
+  "homepage": "https://github.com/ilhamaditya/testcafe#readme",
+  "dependencies": {
+    "testcafe": "^1.8.6"
+  }
+}
